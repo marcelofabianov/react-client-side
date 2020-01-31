@@ -2,15 +2,15 @@ import React, { Component } from "react";
 
 import "./styles.css";
 
+import Routes from "./routes";
 import Header from "./components/Header";
-import Main from "./pages/main";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Main />
+        <Routes />
       </div>
     );
   }
