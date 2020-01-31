@@ -1,6 +1,11 @@
-.product-info {
+.container {
     max-width: 700px;
     margin: 20px auto 0;
+}
+
+.product-info {
+    max-width: 700px;
+    margin: 20px auto 20px;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -19,4 +24,38 @@
 
 .product-info p a {
     color: #069;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.actions a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #da552f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions a[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.actions a[disabled]:hover {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.actions a:hover {
+    opacity: 0.7;
 }
